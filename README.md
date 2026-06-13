@@ -38,7 +38,6 @@ The Python server continuously parses the incoming UART text stream (e.g., `AQ=8
 
 ## 📸 Project Gallery
 
-*(Add your images here following the same structure as your previous project)*
 
 | Renesas CK-RA6M5 Kit | Web Dashboard Interface |
 | :---: | :---: | 
