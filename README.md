@@ -50,15 +50,15 @@ The Python server continuously parses the incoming UART text stream (e.g., `AQ=8
 
 [cite_start]As a core developer on this two-person team[cite: 2700], my specific responsibilities encompassed bridging the embedded hardware with the software processing logic:
 
-* [cite_start]**Hardware Interfacing:** Configured the I2C protocol (SCL0/SDA0) to extract raw data from the ZMOD4410 and manipulated GPIO registers for precise hardware resets[cite: 2836, 2837, 2898].
-* [cite_start]**Firmware & Edge AI Implementation:** Coded the Multivariate Linear Regression model in C, enabling the MCU to perform localized, latency-free time-series predictions[cite: 2860, 2867].
-* [cite_start]**UART Communication:** Set up the SCI3 UART peripheral at the register level to ensure reliable 115200-baud data transmission to the backend[cite: 2838, 2898].
-* [cite_start]**Dashboard Development:** Assisted in building the Python server to decode the UART string and mapped the environmental data to a live, responsive web dashboard[cite: 2874, 2881].
+* **Hardware Interfacing:** Configured the I2C protocol (SCL0/SDA0) to extract raw data from the ZMOD4410 and manipulated GPIO registers for precise hardware resets.
+* **Firmware & Edge AI Implementation:** Coded the Multivariate Linear Regression model in C, enabling the MCU to perform localized, latency-free time-series predictions.
+* **UART Communication:** Set up the SCI3 UART peripheral at the register level to ensure reliable 115200-baud data transmission to the backend.
+* **Dashboard Development:** Assisted in building the Python server to decode the UART string and mapped the environmental data to a live, responsive web dashboard.
 
 ---
 
-## 🛠️ Future Roadmap
+## Future Roadmap
 
-* [cite_start]**Wireless IoT Integration:** Replace the USB-TTL module with an ESP8266 or ESP32 to transmit telemetry data wirelessly over Wi-Fi[cite: 2965].
-* [cite_start]**RTOS Implementation:** Transition from a bare-metal super-loop to FreeRTOS, isolating processes into independent scheduling tasks (`SensorTask`, `MLTask`, `UartTask`, `LedTask`)[cite: 2966].
-* [cite_start]**Model & Sensor Upgrades:** Train the machine learning model using a real collected dataset and integrate physical temperature/humidity sensors to replace the current static compensation values[cite: 2967, 2968].
+* **Wireless IoT Integration:** Replace the USB-TTL module with an ESP8266 or ESP32 to transmit telemetry data wirelessly over Wi-Fi.
+* **RTOS Implementation:** Transition from a bare-metal super-loop to FreeRTOS, isolating processes into independent scheduling tasks (`SensorTask`, `MLTask`, `UartTask`, `LedTask`).
+* **Model & Sensor Upgrades:** Train the machine learning model using a real collected dataset and integrate physical temperature/humidity sensors to replace the current static compensation values.
