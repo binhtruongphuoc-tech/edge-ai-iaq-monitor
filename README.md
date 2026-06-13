@@ -47,7 +47,7 @@ The Python server continuously parses the incoming UART text stream (e.g., `AQ=8
 
 ## Key Contributions
 
-[cite_start]As a core developer on this two-person team[cite: 2700], my specific responsibilities encompassed bridging the embedded hardware with the software processing logic:
+As a core developer on this two-person team, my specific responsibilities encompassed bridging the embedded hardware with the software processing logic:
 
 * **Hardware Interfacing:** Configured the I2C protocol (SCL0/SDA0) to extract raw data from the ZMOD4410 and manipulated GPIO registers for precise hardware resets.
 * **Firmware & Edge AI Implementation:** Coded the Multivariate Linear Regression model in C, enabling the MCU to perform localized, latency-free time-series predictions.
