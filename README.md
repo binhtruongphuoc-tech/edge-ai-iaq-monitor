@@ -1,6 +1,6 @@
 # edge-ai-iaq-monitor
 Bare-metal Edge AI indoor air quality monitor &amp; predictor using Renesas CK-RA6M5 and ZMOD4410.
-# Edge AI Indoor Air Quality Monitor & Predictor 🌍🧠
+# Edge AI Indoor Air Quality Monitor & Predictor 
 
 An embedded Edge AI system designed to monitor, process, and predict Indoor Air Quality (IAQ) directly on a microcontroller, bypassing traditional cloud processing limitations.
 Built with the Renesas CK-RA6M5 kit and ZMOD4410 sensor, this project showcases hardware-software integration, register-level programming, and bare-metal Machine Learning deployment.
@@ -46,7 +46,7 @@ The Python server continuously parses the incoming UART text stream (e.g., `AQ=8
 
 ---
 
-## 👨‍💻 Key Contributions
+## Key Contributions
 
 [cite_start]As a core developer on this two-person team[cite: 2700], my specific responsibilities encompassed bridging the embedded hardware with the software processing logic:
 
@@ -62,3 +62,12 @@ The Python server continuously parses the incoming UART text stream (e.g., `AQ=8
 * **Wireless IoT Integration:** Replace the USB-TTL module with an ESP8266 or ESP32 to transmit telemetry data wirelessly over Wi-Fi.
 * **RTOS Implementation:** Transition from a bare-metal super-loop to FreeRTOS, isolating processes into independent scheduling tasks (`SensorTask`, `MLTask`, `UartTask`, `LedTask`).
 * **Model & Sensor Upgrades:** Train the machine learning model using a real collected dataset and integrate physical temperature/humidity sensors to replace the current static compensation values.
+
+## My Contributions
+
+In this project, I was primarily responsible for configuring the core embedded system and deploying the intelligent algorithm at the edge. My specific contributions included:
+
+* **Sensor Programming:** Developed the source code for initialization, measurement phase configuration, and raw data extraction from the ZMOD4410 digital air quality sensor via the I2C protocol.
+* **Register-Level Programming:** Directly configured hardware registers on the CK-RA6M5 microcontroller for the UART SCI3 peripheral, status LEDs, and the P307 sensor reset pin to optimize execution speed and minimize system latency.
+* **Linear Regression Deployment (Edge AI):** Translated the mathematical formula of the multivariate linear regression model into highly optimized C code, enabling the MCU to perform localized time-series inference directly in its memory without relying on cloud computing.
+* **Hardware Debugging & Configuration:** Handled the hardware setup, troubleshooting, and debugging on the CK-RA6M5 development kit, resolving data synchronization issues over the USB-to-TTL interface to ensure a continuous, real-time data stream to the backend.
