@@ -25,6 +25,14 @@ The system architecture prioritizes autonomous operation. Instead of streaming r
 
 ---
 
+## 📸 Project Gallery
+
+
+| Renesas CK-RA6M5 Kit | Web Dashboard Interface |
+| :---: | :---: | 
+| ![Hardware Kit](images/kit_ra6m5.png) | ![Dashboard](images/dashboard.png) |
+
+---
 ## My Contributions
 In this project, I was responsible for the core embedded implementation and the integration of the AI logic:
 
@@ -33,12 +41,5 @@ In this project, I was responsible for the core embedded implementation and the 
 * **Edge AI Deployment:** Translated the Multivariate Linear Regression model into optimized C code, enabling real-time time-series inference directly on the MCU.
 * **Debugging & Hardware Bring-up:** Managed the end-to-end hardware setup, resolving timing and signal integrity issues across the UART interface to ensure a stable data stream.
 
----
 
-## 📸 Project Gallery
-
-
-| Renesas CK-RA6M5 Kit | Web Dashboard Interface |
-| :---: | :---: | 
-| ![Hardware Kit](images/kit_ra6m5.png) | ![Dashboard](images/dashboard.png) |
 
