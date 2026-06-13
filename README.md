@@ -34,9 +34,9 @@ The system architecture prioritizes autonomous operation. Instead of streaming r
 
 ---
 ## My Contributions
-I handled the **core firmware** and **integrated the AI model on the hardware**.
+I focused on the **embedded firmware** and **getting the AI logic running directly on the hardware**.
 
-I wrote the C driver for the ZMOD4410 sensor to handle I2C data polling and configured the UART and GPIO registers directly on the CK-RA6M5 to keep the system lean and low-latency. For the AI part, I ported our multivariate linear regression model into optimized C code, allowing the MCU to perform inference locally without any cloud dependency. Finally, I managed the hardware bring-up—debugging timing and signal issues to ensure we had a stable, real-time data stream.
+I wrote the C driver for the ZMOD4410 sensor and used register-level programming for the UART and GPIO to keep the system fast and responsive. For the AI, I ported our linear regression model to C so it runs entirely on-chip—no cloud dependencies. I also managed the hardware bring-up, which involved plenty of debugging to iron out timing and signal issues to get a rock-solid data stream.
 
 
 
