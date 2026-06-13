@@ -34,12 +34,9 @@ The system architecture prioritizes autonomous operation. Instead of streaming r
 
 ---
 ## My Contributions
-In this project, I was responsible for the core embedded implementation and the integration of the AI logic:
+I handled the **core firmware** and **integrated the AI model on the hardware**.
 
-* **Sensor Driver & I2C:** Developed the C implementation for ZMOD4410 communication, including initialization sequences and raw data extraction.
-* **Register-Level Programming:** Configured the UART SCI3 and GPIO registers on the CK-RA6M5 to achieve high-efficiency, low-latency telemetry transmission.
-* **Edge AI Deployment:** Translated the Multivariate Linear Regression model into optimized C code, enabling real-time time-series inference directly on the MCU.
-* **Debugging & Hardware Bring-up:** Managed the end-to-end hardware setup, resolving timing and signal integrity issues across the UART interface to ensure a stable data stream.
+I wrote the C driver for the ZMOD4410 sensor to handle I2C data polling and configured the UART and GPIO registers directly on the CK-RA6M5 to keep the system lean and low-latency. For the AI part, I ported our multivariate linear regression model into optimized C code, allowing the MCU to perform inference locally without any cloud dependency. Finally, I managed the hardware bring-up—debugging timing and signal issues to ensure we had a stable, real-time data stream.
 
 
 
